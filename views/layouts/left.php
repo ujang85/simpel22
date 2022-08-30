@@ -40,13 +40,13 @@
                         'url' => '#',
                         'items' => [
                             ['label' => 'Data User', 'icon' => 'user', 'url' =>'#'],
-                             ['label' => 'Setting Hak Akses User', 'icon' => 'key', 'url' => ['/mimin/user/index']],
+                         //    ['label' => 'Setting Hak Akses User', 'icon' => 'key', 'url' => ['/mimin/user/index']],
                              ['label' => 'Ubah Password User', 'icon' => 'key', 'url' => ['/user2/ubahpassword']],
-                             ['label' => 'Buat Akun User', 'icon' => 'certificate', 'url' => ['/site/signup']],
+                        //     ['label' => 'Buat Akun User', 'icon' => 'certificate', 'url' => ['/site/signup']],
                         ],],
-                    ['label' => 'DATA PEGAWAI','icon' => 'user-plus', 'url' =>['/pegawai/index']],
+                //    ['label' => 'DATA PEGAWAI','icon' => 'user-plus', 'url' =>['/pegawai/index']],
                     ['label' => 'PILIH KANDIDAT','icon' => 'user-plus', 'url' =>['/kandidat/create']],
-                    [
+                /*    [
                         'label' => 'PENILAIAN PEGAWAI',
                         'icon' => 'cube',
                         'url' => '#',
@@ -71,7 +71,7 @@
                                     ['label' => 'PERAWAT', 'icon' => 'circle-o', 'url' => ['/skor/indexperawat']],
                                     ['label' => 'KPKL', 'icon' => 'circle-o', 'url' => ['/skor/indexkpkl']],
                                     ['label' => 'UMUM', 'icon' => 'circle-o', 'url' => ['/skor/indexumum']],
-                                ],],
+                                ],], */
 
                             ],
                         
