@@ -19,7 +19,7 @@ $this->params['breadcrumbs'][] = $this->title;
     ]) ?>
 
 <center>
-    <h2>Kriteria Penilaian sbb:</h2>
+    <h2>Sebagai Acuan Kriteria Penilaian sbb:</h2>
 <?php  echo $this->render('penilaian'); ?>
 </center>
 </div>
