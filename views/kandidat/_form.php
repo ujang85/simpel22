@@ -27,7 +27,7 @@ use kartik\select2\Select2;
 
     <?= 
      $form->field($model, 'nip_kpkl')->widget(Select2::classname(), [
-    'data' => ArrayHelper::map(Pegawai::findBySql('select * from pegawai where rumpun="KPKL"')->all(),'nip','nama'),
+    'data' => ArrayHelper::map(Pegawai::findBySql('select * from pegawai where rumpun="KPKL"')->all(),'nip','nama','jabatan'),
     'options' => ['placeholder' => 'Select a nama ...'],
     'pluginOptions' => [
         'allowClear' => true
@@ -37,7 +37,7 @@ use kartik\select2\Select2;
 
      <?= 
      $form->field($model, 'nip_perawat')->widget(Select2::classname(), [
-    'data' => ArrayHelper::map(Pegawai::findBySql('select * from pegawai where rumpun="perawat"')->all(),'nip','nama'),
+    'data' => ArrayHelper::map(Pegawai::findBySql('select * from pegawai where rumpun="perawat"')->all(),'nip','nama','jabatan'),
     'options' => ['placeholder' => 'Select a nama ...'],
     'pluginOptions' => [
         'allowClear' => true
@@ -47,7 +47,7 @@ use kartik\select2\Select2;
 
      <?= 
      $form->field($model, 'nip_umum')->widget(Select2::classname(), [
-    'data' => ArrayHelper::map(Pegawai::findBySql('select * from pegawai where rumpun="umum"')->all(),'nip','nama'),
+    'data' => ArrayHelper::map(Pegawai::findBySql('select * from pegawai where rumpun="umum"')->all(),'nip','nama','jabatan'),
     'options' => ['placeholder' => 'Select a nama ...'],
     'pluginOptions' => [
         'allowClear' => true

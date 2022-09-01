@@ -13,14 +13,15 @@ $this->params['breadcrumbs'][] = $this->title;
 
 <?= Html::a('<i class="glyphicon glyphicon-user"> Home</i>', ['/site/index'],
                               ['class'=>'btn btn-warning']) ?>
+<center>
+    <h2>Sebagai Acuan Kriteria Penilaian sbb:</h2>
+<?php  echo $this->render('penilaian'); ?>
+</center>
     <h1><?= Html::encode($this->title) ?></h1>
     <?= $this->render('_form', [
         'model' => $model,
     ]) ?>
 
 
-<center>
-    <h2>Sebagai Acuan Kriteria Penilaian sbb:</h2>
-<?php  echo $this->render('penilaian'); ?>
-</center>
+
 </div>

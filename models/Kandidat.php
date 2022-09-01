@@ -35,7 +35,7 @@ class Kandidat extends \yii\db\ActiveRecord
             [['tgl'], 'safe'],
             [['nip_kpkl', 'nip_medis', 'nip_perawat', 'nip_umum'], 'string', 'max' => 100],
             [['nip_kpkl', 'nip_medis', 'nip_perawat', 'nip_umum'], 'required'],
-            ['user_pemilih', 'unique', 'targetClass' => '\app\models\Kandidat', 'message' => 'Nama ini sudah memilih'],
+            ['user_pemilih', 'unique', 'targetClass' => '\app\models\Kandidat', 'message' => 'Anda sudah memilih'],
         ];
     }
 
@@ -47,10 +47,10 @@ class Kandidat extends \yii\db\ActiveRecord
         return [
             'id' => 'ID',
             'user_pemilih' => 'User Pemilih',
-            'nip_kpkl' => 'Nama Balon KPKL',
-            'nip_medis' => 'Nama Balon Dokter/Medis',
-            'nip_perawat' => 'Nama Balon Perawat',
-            'nip_umum' => 'Nama Balon Umum',
+            'nip_kpkl' => 'Nama Balon Kelompok KPKL',
+            'nip_medis' => 'Nama Balon Kelompok Dokter/Medis',
+            'nip_perawat' => 'Nama Balon Kelompok Perawat',
+            'nip_umum' => 'Nama Balon Kelompok Umum',
             'tgl' => 'Tgl',
         ];
     }

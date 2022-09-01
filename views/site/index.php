@@ -20,9 +20,9 @@ $this->title = '';
                   <justify>
                   
                 <p style="color:black;font-size:16px;">
-                  Kami informasikan kepada segenap pegawai RSUD KOTA YOGYAKARTA, bahwasanya untuk mendukung program Pemilihan Pegawai Teladan TAHUN 2022
-                  diharapkan Bapak/Ibu sekalian untuk memilih 1 kandidat untuk setiap rumpun/kelompok yang akan 
-                  di nominasikan sebagai pegawai Teladan TAHUN 2022, dengan KLIK tombol PILIH KANDIDAT disamping .
+                  Kami informasikan kepada segenap pegawai RSUD KOTA YOGYAKARTA, bahwasanya dalam rangka mendukung program Pemilihan Pegawai Teladan TAHUN 2022
+                  diharapkan segenap pegawai RSUD KOTA YOGYAKARTA memilih 1 kandidat untuk setiap kelompok yang akan 
+                  di nominasikan sebagai pegawai Teladan TAHUN 2022,Silakan memilih sesuai "persepsi Saudara" dengan KLIK tombol PILIH KANDIDAT disamping .
                 </p>   
               
                 </justify>            
