@@ -17,7 +17,7 @@ use kartik\select2\Select2;
     <?= $form->field($model, 'user_pemilih')->HiddenInput(['maxlength' => true])->label(false) ?>
     <?= 
      $form->field($model, 'nip_medis')->widget(Select2::classname(), [
-    'data' => ArrayHelper::map(Pegawai::findBySql('select * from pegawai where rumpun="DOKTER"')->all(),'nip','nama'),
+    'data' => ArrayHelper::map(Pegawai::findBySql('select * from pegawai where rumpun="DOKTER" and active=1')->all(),'nip','nama'),
     'options' => ['placeholder' => 'Select a nama ...'],
     'pluginOptions' => [
         'allowClear' => true
@@ -27,7 +27,7 @@ use kartik\select2\Select2;
 
     <?= 
      $form->field($model, 'nip_kpkl')->widget(Select2::classname(), [
-    'data' => ArrayHelper::map(Pegawai::findBySql('select * from pegawai where rumpun="KPKL"')->all(),'nip','nama','jabatan'),
+    'data' => ArrayHelper::map(Pegawai::findBySql('select * from pegawai where rumpun="KPKL" and active=1')->all(),'nip','nama'),
     'options' => ['placeholder' => 'Select a nama ...'],
     'pluginOptions' => [
         'allowClear' => true
@@ -37,7 +37,7 @@ use kartik\select2\Select2;
 
      <?= 
      $form->field($model, 'nip_perawat')->widget(Select2::classname(), [
-    'data' => ArrayHelper::map(Pegawai::findBySql('select * from pegawai where rumpun="perawat"')->all(),'nip','nama','jabatan'),
+    'data' => ArrayHelper::map(Pegawai::findBySql('select * from pegawai where rumpun="perawat" and active=1')->all(),'nip','nama'),
     'options' => ['placeholder' => 'Select a nama ...'],
     'pluginOptions' => [
         'allowClear' => true
@@ -47,7 +47,7 @@ use kartik\select2\Select2;
 
      <?= 
      $form->field($model, 'nip_umum')->widget(Select2::classname(), [
-    'data' => ArrayHelper::map(Pegawai::findBySql('select * from pegawai where rumpun="umum"')->all(),'nip','nama','jabatan'),
+    'data' => ArrayHelper::map(Pegawai::findBySql('select * from pegawai where rumpun="umum" and active=1')->all(),'nip','nama'),
     'options' => ['placeholder' => 'Select a nama ...'],
     'pluginOptions' => [
         'allowClear' => true
