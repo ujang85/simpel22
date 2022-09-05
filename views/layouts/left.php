@@ -45,7 +45,7 @@
                         //     ['label' => 'Buat Akun User', 'icon' => 'certificate', 'url' => ['/site/signup']],
                         ],],
                 //    ['label' => 'DATA PEGAWAI','icon' => 'user-plus', 'url' =>['/pegawai/index']],
-                    ['label' => 'PILIH KANDIDAT','icon' => 'user-plus', 'url' =>['/kandidat/create']],
+                //    ['label' => 'PILIH KANDIDAT','icon' => 'user-plus', 'url' =>['/kandidat/create']],
                 /*    [
                         'label' => 'PENILAIAN PEGAWAI',
                         'icon' => 'cube',

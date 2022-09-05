@@ -36,8 +36,9 @@ class SignupForm extends Model
             ['password', 'required'],
             ['password', 'string', 'min' => 6],
             //iki tambahan
+            /*
             ['unit', 'required'],
-            ['unit', 'string'],
+            ['unit', 'string'], */
         ];
     }
 
@@ -55,7 +56,7 @@ class SignupForm extends Model
         $user = new User();
         $user->username = $this->username;
         $user->email = $this->email;
-        $user->unit = $this->unit;
+    //    $user->unit = $this->unit;
         $user->setPassword($this->password);
         $user->generateAuthKey();
         
