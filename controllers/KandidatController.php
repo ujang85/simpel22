@@ -57,7 +57,7 @@ class KandidatController extends Controller
         ]);
     }
 
-    public function actionCreateZ()
+    public function actionCreate()
     {
         $model = new Kandidat();
 
