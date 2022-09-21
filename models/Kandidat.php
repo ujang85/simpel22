@@ -61,6 +61,12 @@ class Kandidat extends \yii\db\ActiveRecord
         $tglsekarang=Yii::$app->db->createCommand($sql1)->queryScalar(); 
         return $tglsekarang;
     }
+    public function getResponden()
+    {
+        $sql1 = "SELECT count(user_pemilih) as responden from kandidat";
+        $jmlresponden=Yii::$app->db->createCommand($sql1)->queryScalar(); 
+        return $jmlresponden;
+    }
     public function getPegawaiMedis()
     {
         return $this->hasOne(Pegawai::className(), ['nip' => 'nip_medis']);

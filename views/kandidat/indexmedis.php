@@ -17,6 +17,11 @@ CrudAsset::register($this);
 
 ?>
 <p class="lead"><h2>SKOR KANDIDAT PEGAWAI TELADAN RUMPUN MEDIS</h2></p> 
+<h4>Jumlah responden : <?php
+$command = Yii::$app->db->createCommand('SELECT count(user_pemilih) as responden from kandidat');
+$result = $command->queryScalar();
+        echo $result ; 
+  ?></h4>
 <div class="pegawai-index">
     <div id="ajaxCrudDatatable">
         <?=GridView::widget([
