@@ -59,19 +59,19 @@
                                  //   ['label' => 'ALL', 'icon' => 'send', 'url' => ['/penilaian/indexall'],'visible'=> Yii::$app->user->identity->unit=='1'],
 
                                   //  ['label' => 'Monitoring Peminjaman','icon' => 'user', 'url' => ['/transaksi/indexuser'], 'visible'=> Yii::$app->user->identity->hak_akses==2]
-                        ],],
-                    ['label' => 'DAFTAR NILAI','icon' => 'user-plus', 'url' =>['/penilaian-pegawai/index']],
+                        ],], 
+                    ['label' => 'DAFTAR NILAI','icon' => 'user-plus', 'url' =>['/penilaian-pegawai/index']], */
                         
                             [
                                 'label' => 'SKOR',
                                 'icon' => 'calendar-o',
                                 'url' => '#',
                                 'items' => [
-                                    ['label' => 'DOKTER', 'icon' => 'circle-o', 'url' => ['/skor/indexdokter']],
-                                    ['label' => 'PERAWAT', 'icon' => 'circle-o', 'url' => ['/skor/indexperawat']],
-                                    ['label' => 'KPKL', 'icon' => 'circle-o', 'url' => ['/skor/indexkpkl']],
-                                    ['label' => 'UMUM', 'icon' => 'circle-o', 'url' => ['/skor/indexumum']],
-                                ],], */
+                                    ['label' => 'DOKTER/MEDIS', 'icon' => 'circle-o', 'url' => ['/kandidat/skormedis']],
+                                    ['label' => 'PERAWAT', 'icon' => 'circle-o', 'url' => ['/kandidat/skorperawat']],
+                                    ['label' => 'KPKL', 'icon' => 'circle-o', 'url' => ['/kandidat/skorkpkl']],
+                                    ['label' => 'UMUM', 'icon' => 'circle-o', 'url' => ['/kandidat/skorumum']],
+                                ],], 
 
                             ],
                         

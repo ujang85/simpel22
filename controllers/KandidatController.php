@@ -8,7 +8,7 @@ use app\models\KandidatSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
-
+use yii\data\SqlDataProvider;
 /**
  * KandidatController implements the CRUD actions for Kandidat model.
  */
@@ -44,6 +44,57 @@ class KandidatController extends Controller
         ]);
     }
 
+    public function actionSkorkpkl()
+    {
+         $sql = "select pegawai.nama, kandidat.nip_kpkl,concat('`',nip_kpkl) as nip,COUNT(nip_kpkl) as jumlah_kpkl from kandidat 
+                Join pegawai on kandidat.nip_kpkl=pegawai.nip
+                group by kandidat.nip_kpkl
+                order by jumlah_kpkl desc";
+        
+         $SqlProvider = new SqlDataProvider ([
+            'sql' => $sql,
+         ]);
+          return $this->render('indexkpkl',['SqlProvider'=> $SqlProvider]);
+    }
+
+    public function actionSkormedis()
+    {
+         $sql = "select pegawai.nama, kandidat.nip_medis,concat('`',nip_medis) as nip,COUNT(nip_medis) as jumlah_medis from kandidat 
+                Join pegawai on kandidat.nip_medis=pegawai.nip
+                group by kandidat.nip_medis
+                order by jumlah_medis desc";
+        
+         $SqlProvider = new SqlDataProvider ([
+            'sql' => $sql,
+         ]);
+          return $this->render('indexmedis',['SqlProvider'=> $SqlProvider]);
+    }
+
+    public function actionSkorperawat()
+    {
+         $sql = "select pegawai.nama, kandidat.nip_perawat,concat('`',nip_perawat) as nip,COUNT(nip_perawat) as jumlah_perawat from kandidat 
+                Join pegawai on kandidat.nip_perawat=pegawai.nip
+                group by kandidat.nip_perawat
+                order by jumlah_perawat desc";
+        
+         $SqlProvider = new SqlDataProvider ([
+            'sql' => $sql,
+         ]);
+          return $this->render('indexperawat',['SqlProvider'=> $SqlProvider]);
+    }
+
+    public function actionSkorumum()
+    {
+         $sql = "select pegawai.nama, kandidat.nip_umum,concat('`',nip_umum) as nip,COUNT(nip_umum) as jumlah_umum from kandidat 
+                Join pegawai on kandidat.nip_umum=pegawai.nip
+                group by kandidat.nip_umum
+                order by jumlah_umum desc";
+        
+         $SqlProvider = new SqlDataProvider ([
+            'sql' => $sql,
+         ]);
+          return $this->render('indexumum',['SqlProvider'=> $SqlProvider]);
+    }
     /**
      * Displays a single Kandidat model.
      * @param integer $id
