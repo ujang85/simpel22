@@ -44,6 +44,12 @@ class KandidatController extends Controller
         ]);
     }
 
+    public function actionIndextutup()
+    {
+        
+        return $this->render('indextutup');
+    }
+
     public function actionSkorkpkl()
     {
          $sql = "select pegawai.nama, kandidat.nip_kpkl,concat('`',nip_kpkl) as nip,COUNT(nip_kpkl) as jumlah_kpkl from kandidat 

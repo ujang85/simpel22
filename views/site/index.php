@@ -34,7 +34,7 @@ $this->title = '';
                   Silakan KLIK tombol PILIH KANDIDAT dibawah:
                   <br>
                   <br>
-                  <?= Html::a('<i class="glyphicon glyphicon-user">  PILIH KANDIDAT</i>', ['/kandidat/create'],
+                  <?= Html::a('<i class="glyphicon glyphicon-user">  PILIH KANDIDAT</i>', ['/kandidat/indextutup'],
                               ['class'=>'btn-lg btn-danger']) ?>
               </p>  
 
